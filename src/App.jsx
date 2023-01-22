@@ -13,8 +13,8 @@ function App() {
             <Header />
 
             <Routes>
-                <Route exact path="/" element={<Items />} />
-                <Route exact path="/cart" element={<Cart />} />
+                <Route exact path="/private-sale-ecomm/" element={<Items />} />
+                <Route exact path="/private-sale-ecomm/cart" element={<Cart />} />
 
                 <Route path=':itemId' element={<ItemPage />}>
                 </Route>
