@@ -6,6 +6,7 @@ import Items from "./pages/Items"
 import ItemPage from "./pages/ItemPage"
 
 function App() {    
+    console.log("hi app")
 
     return (
         <div>
