@@ -43,7 +43,7 @@ function Item(item){
                     <img src={item.image} className="md:p-4 md:max-h-64 max-h-56" />
                 </div>
             </div>
-            <Link to={`${item.id}`}>
+            <Link to={`/private-sale-ecomm/${item.id}`}>
                 <div className='w-full max-h-64'>
                     <h3 className='font-bold md:text-base text-sm uppercase'>{item.title}</h3>
                     <h3 className='text-sm text-right pt-4'>{(item.price).toLocaleString("en-US", {style: "currency", currency: "USD"})}</h3>
