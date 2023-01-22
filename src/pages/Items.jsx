@@ -4,8 +4,9 @@ import Item from "../components/Item"
 
 function Items() {
     const {itemsArray} = useContext(Context)
+    console.log(itemsArray)
+
     let allItems = itemsArray.map((item, i) => {
-        
         return(
             <Item
             id={item.id}
