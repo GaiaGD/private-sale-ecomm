@@ -8,7 +8,6 @@ function ContextProvider({children}) {
 
 
     useEffect(() => {
-        console.log("hi context")
 
         // on loading, checking that localcart is empty - using getItems. If found, we parse the string found inside it
         if (window.localStorage.getItem('itemsInCart')){

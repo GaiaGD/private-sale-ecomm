@@ -4,8 +4,6 @@ import Item from "../components/Item"
 
 function Items() {
     const {itemsArray} = useContext(Context)
-    console.log(itemsArray)
-    console.log("hi items")
 
     let allItems = itemsArray.map((item, i) => {
         return(

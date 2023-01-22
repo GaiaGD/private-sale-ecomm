@@ -6,7 +6,6 @@ import Items from "./pages/Items"
 import ItemPage from "./pages/ItemPage"
 
 function App() {    
-    console.log("hi app")
 
     return (
         <div>
@@ -16,7 +15,7 @@ function App() {
                 <Route exact path="/private-sale-ecomm/" element={<Items />} />
                 <Route exact path="/private-sale-ecomm/cart" element={<Cart />} />
 
-                <Route path=':itemId' element={<ItemPage />}>
+                <Route path='/private-sale-ecomm/:itemId' element={<ItemPage />}>
                 </Route>
 
             </Routes>
