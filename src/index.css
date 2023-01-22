@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #150605;
+  --red: #EA453C;
+  --pink: #F47B6E;
+  --light-blue: #EFFBFE;
+  --blue: #ACE6EC;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.bag.full {
+  background-image: url(../public/shopping-bag-full.svg);
+  border: none;
+}
+
+.bag.empty {
+  background-image: url(../public/shopping-bag-empty.svg);
+}
+/* 
+.cart-page > h1 {
+  text-align: center;
+}
+
+.cart-page .total-cost {
+  text-align: right;
+  font-size: 1.3em;
+}
+
+.cart-page div.order-button {
+  display: flex;
+  justify-content: center;
+}
+
+div.order-button > button {
+  transition: all .2s ease-in-out;
+}
+
+div.order-button > button:focus {
+  outline: none;
+}
+
+div.order-button > button:disabled {
+  border-color: lightgray;
+}
+
+.image-container {
+  position: relative;
+} */
+/* 
+.favorite {
+  color: var(--red);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+} */
+/* 
+.ri-heart-fill {
+  opacity: .7;
+} */
+/* 
+.ri-delete-bin-line, .ri-delete-bin-fill {
+  font-size: 1.3em;
+  cursor: pointer;
+} */
+/* 
+.cart {
+  color: var(--blue);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+} */
+
+a {
+  text-decoration: none;
+}
+
+.fade-in-image {
+  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
