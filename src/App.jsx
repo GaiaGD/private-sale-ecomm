@@ -12,10 +12,10 @@ function App() {
             <Header />
 
             <Routes>
-                <Route exact path="/private-sale-ecomm/" element={<Items />} />
-                <Route exact path="/private-sale-ecomm/cart" element={<Cart />} />
+                <Route exact path="/" element={<Items />} />
+                <Route exact path="/cart" element={<Cart />} />
 
-                <Route path='/private-sale-ecomm/:itemId' element={<ItemPage />}>
+                <Route path='/:itemId' element={<ItemPage />}>
                 </Route>
 
             </Routes>

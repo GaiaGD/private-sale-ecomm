@@ -8,20 +8,20 @@ function Item(item){
     const [hovered, ref] = useHover()
     const {cartItems, toggleFavorite, addToCart, removeFromCart} = useContext(Context)
 
-    let heartEmpty = "/private-sale-ecomm/assets/notFavorite.svg"
-    let heartFull = "/private-sale-ecomm/assets/isFavorite.svg"
+    let heartEmpty = "/assets/notFavorite.svg"
+    let heartFull = "/assets/isFavorite.svg"
 
-    let addToCartPlus = "/private-sale-ecomm/assets/add-to-cart.svg"
-    let addedToCart = "/private-sale-ecomm/assets/shopping-bag-full.svg"
+    let addToCartPlus = "/assets/add-to-cart.svg"
+    let addedToCart = "/assets/shopping-bag-full.svg"
 
     function heartIcon() {
 
         if(item.isFavorite) {
-            return <img className="absolute h-4" src={`/private-sale-ecomm/${heartFull}`} onClick={() => toggleFavorite(item.id)} />
+            return <img className="absolute h-4" src={`/${heartFull}`} onClick={() => toggleFavorite(item.id)} />
         }
 
         else if(hovered) {
-            return <img className="absolute h-4" src={`/private-sale-ecomm/${heartEmpty}`} onClick={() => toggleFavorite(item.id)}/>
+            return <img className="absolute h-4" src={`/${heartEmpty}`} onClick={() => toggleFavorite(item.id)}/>
         }
     }
 
@@ -43,7 +43,7 @@ function Item(item){
                     <img src={item.image} className="md:p-4 md:max-h-64 max-h-56" />
                 </div>
             </div>
-            <Link to={`/private-sale-ecomm/${item.id}`}>
+            <Link to={`/${item.id}`}>
                 <div className='w-full max-h-64'>
                     <h3 className='font-bold md:text-base text-sm uppercase'>{item.title}</h3>
                     <h3 className='text-sm text-right pt-4'>{(item.price).toLocaleString("en-US", {style: "currency", currency: "USD"})}</h3>

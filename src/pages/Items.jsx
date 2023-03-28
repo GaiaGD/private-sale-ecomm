@@ -28,7 +28,7 @@ function Items() {
                 {allItems}
             </main>
         :
-        <img className="w-full max-h-24 mt-28 animate-spin" src="/private-sale-ecomm/assets/PS-logo.svg" />
+        <img className="w-full max-h-24 mt-28 animate-spin" src="/assets/PS-logo.svg" />
     )
 }
 
