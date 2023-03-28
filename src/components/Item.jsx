@@ -17,11 +17,11 @@ function Item(item){
     function heartIcon() {
 
         if(item.isFavorite) {
-            return <img className="absolute h-4" src={`/${heartFull}`} onClick={() => toggleFavorite(item.id)} />
+            return <img className="absolute h-4" src={`${heartFull}`} onClick={() => toggleFavorite(item.id)} />
         }
 
         else if(hovered) {
-            return <img className="absolute h-4" src={`/${heartEmpty}`} onClick={() => toggleFavorite(item.id)}/>
+            return <img className="absolute h-4" src={`${heartEmpty}`} onClick={() => toggleFavorite(item.id)}/>
         }
     }
 
