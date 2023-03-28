@@ -8,11 +8,11 @@ function Item(item){
     const [hovered, ref] = useHover()
     const {cartItems, toggleFavorite, addToCart, removeFromCart} = useContext(Context)
 
-    let heartEmpty = "/assets/notFavorite.svg"
-    let heartFull = "/assets/isFavorite.svg"
+    let heartEmpty = "/private-sale-ecomm/assets/notFavorite.svg"
+    let heartFull = "/private-sale-ecomm/assets/isFavorite.svg"
 
-    let addToCartPlus = "/assets/add-to-cart.svg"
-    let addedToCart = "/assets/shopping-bag-full.svg"
+    let addToCartPlus = "/private-sale-ecomm/assets/add-to-cart.svg"
+    let addedToCart = "/private-sale-ecomm/assets/shopping-bag-full.svg"
 
     function heartIcon() {
 
