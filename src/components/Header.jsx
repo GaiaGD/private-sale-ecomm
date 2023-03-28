@@ -13,10 +13,10 @@ function Header() {
             <header className="shadow-lg p-4 text-white sticky top-0 z-50 bg-white fade-in-image">
                 <div className="flex justify-between items-center max-w-screen-xl mx-auto">
                     <Link to="/">
-                        <img className="w-full max-h-24" src="/private-sale-ecomm/assets/PS-logo.svg" />
+                        <img className="w-full max-h-24" src="private-sale-ecomm/assets/PS-logo.svg" />
                     </Link>
                     <Link className="border-0" to="/cart">
-                        <img className="bag h-12 w-12 bg-no-repeat bg-center" src={`/${bagIcon}`}/>
+                        <img className="bag h-12 w-12 bg-no-repeat bg-center" src={`${bagIcon}`}/>
                     </Link>
                 </div>
             </header>
